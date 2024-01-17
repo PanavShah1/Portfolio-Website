@@ -1,0 +1,102 @@
+body{
+    background-color: #181818;
+    color: white;
+}
+
+.navbar{
+    background-color: #313131;
+}
+
+.navbar-toggler-icon{
+    background-color: white;
+    filter: invert(1);
+}
+
+
+a{
+    color: white !important;
+    text-decoration: none;
+}
+
+a:hover{
+    transform: scale(1.03);
+    color: orange !important;
+    cursor: pointer;
+}
+
+#index{
+    width: 300px;
+}
+
+ul{
+    width: 50vw;
+}
+
+#container{
+    margin-top: 130px;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#bio{
+    border: 1px white solid;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    max-width: 600px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#left{
+    margin-right: 20px;
+}
+
+
+img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#contact{
+    border: 1px white solid;
+    margin: 20px;
+    min-width: 300px;
+    max-width: 600px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#info{
+    border: 1px solid white;
+    margin-left: 20px;
+    width: calc(100% - 40px);
+    margin-right: 0;
+    padding: 20px;
+    max-width: 940px;
+}
+
+
+@media (max-width: 980px){
+    .nav-item{
+        flex-direction: column;
+    }
+    #container div:nth-child(2){
+        order: 3;
+    }
+    #container div:nth-child(3){
+        order: 2;
+    }
+
+    #bio{
+        max-width: 100%;
+    }
+}
