@@ -26,14 +26,14 @@ a:hover{
 
 #index{
     width: 300px;
+    margin-left: 30px;
 }
 
-ul{
-    width: 50vw;
-}
+
+
 
 #container{
-    margin-top: 130px;
+    margin-top: 90px;
     margin-left: 0;
     display: flex;
     flex-wrap: wrap;
@@ -98,5 +98,12 @@ img{
 
     #bio{
         max-width: 100%;
+    }
+
+}
+
+@media (max-width: 767.98px){
+    #index{
+        margin-left: 0;
     }
 }
