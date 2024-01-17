@@ -1,17 +1,58 @@
+body{
+    background-color: #181818;
+    color: white;
+}
+
+
+.navbar{
+    background-color: #313131;
+}
+
+.nav-link{
+    margin-top: 10px;
+}
+
+.navbar-toggler-icon{
+    background-color: white;
+    filter: invert(1);
+}
+
+
 a{
-    color: black !important;
+    color: white !important;
+    text-decoration: none;
 }
 
 a:hover{
-    transform: scale(1.03);
-    color: white !important;
+    transform: scale(1.04);
+    color: rgb(102, 211, 110) !important;
     cursor: pointer;
+    
 }
 
 #index{
     width: 300px;
+    margin-left: 30px;
 }
 
-ul{
-    width: 50vw;
+#container{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
 }
+
+#container >div{
+    margin: 20px;
+    border: white 1px solid;
+    display: flex;
+    padding: 10px;
+}
+
+
+@media (max-width:767.69px){
+    #container>div{
+        flex-direction: column;
+    }
+}
+
+

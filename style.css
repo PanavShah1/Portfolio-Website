@@ -3,8 +3,13 @@ body{
     color: white;
 }
 
+
 .navbar{
     background-color: #313131;
+}
+
+.nav-link{
+    margin-top: 10px;
 }
 
 .navbar-toggler-icon{
@@ -19,9 +24,10 @@ a{
 }
 
 a:hover{
-    transform: scale(1.03);
-    color: orange !important;
+    transform: scale(1.04);
+    color: rgb(102, 211, 110) !important;
     cursor: pointer;
+    
 }
 
 #index{
@@ -34,7 +40,6 @@ a:hover{
 
 #container{
     margin-top: 90px;
-    margin-left: 0;
     display: flex;
     flex-wrap: wrap;
 }
