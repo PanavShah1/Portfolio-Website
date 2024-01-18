@@ -1,0 +1,110 @@
+body{
+    background-color: #181818;
+    color: white;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/362/534/508/tile-simple-pattern-shapes-wallpaper-thumb.jpg');
+}
+
+
+.navbar{
+    /* background-color: #313131; */
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+.nav-link{
+    margin-top: 10px;
+}
+
+.navbar-toggler-icon{
+    background-color: white;
+    filter: invert(1);
+}
+
+
+a{
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+a:hover{
+    /* transform: scale(1.03); */
+    color: rgb(255, 140, 0) !important;
+    cursor: pointer;
+    
+}
+
+#index{
+    width: 400px;
+    margin-left: 30px;
+}
+
+#container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#container >div{
+    margin: 10px;
+    /* border: white 1px solid; */
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    /* background-color: rgb(255, 251, 0); */
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+}
+
+#container > div > .text{
+    /* background-color: #181818; */
+    /* box-shadow: inset 0px 0px 50px 50px #181818; */
+    padding: 20px;
+}
+
+#container > div:hover{ 
+    /* background-color: rgb(25, 104, 156); */
+    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    /* box-shadow: inset 0px 0px 50px 50px #181818; */
+}
+
+img{
+    border-radius: 10px;
+}
+
+
+@media (max-width:767.69px){
+    #container>div{
+        flex-direction: column;
+    }
+    #index{
+        margin-left: 0;
+    }
+
+    #intro img:nth-child(2){
+        order: 1;
+    }
+
+    #description img:nth-child(1){
+        order: 1;
+    }
+
+    #me-cubing img:nth-child(2){
+        order: 1;
+    }
+
+    #competitions img:nth-child(1){
+        order: 1;
+    }
+}
+
+@media (max-width: 980px){
+    .nav-item{
+        flex-direction: column;
+    }
+}
+
+

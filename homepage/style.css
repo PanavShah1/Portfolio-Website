@@ -112,3 +112,9 @@ img{
         margin-left: 0;
     }
 }
+
+@media (max-width: 980px){
+    .nav-item{
+        flex-direction: column;
+    }
+}

@@ -8,6 +8,7 @@ body{
     background-color: #313131;
 }
 
+
 .nav-link{
     margin-top: 10px;
 }
@@ -24,7 +25,7 @@ a{
 }
 
 a:hover{
-    transform: scale(1.04);
+    transform: scale(1.03);
     color: rgb(102, 211, 110) !important;
     cursor: pointer;
     
@@ -46,11 +47,37 @@ a:hover{
     border: white 1px solid;
     display: flex;
     padding: 10px;
+    gap: 20px;
 }
 
 
 @media (max-width:767.69px){
     #container>div{
+        flex-direction: column;
+    }
+    #index{
+        margin-left: 0;
+    }
+
+    #intro img:nth-child(2){
+        order: 1;
+    }
+
+    #description img:nth-child(1){
+        order: 1;
+    }
+
+    #me-cubing img:nth-child(2){
+        order: 1;
+    }
+
+    #competitions img:nth-child(1){
+        order: 1;
+    }
+}
+
+@media (max-width: 980px){
+    .nav-item{
         flex-direction: column;
     }
 }
