@@ -1,12 +1,16 @@
 body{
     background-color: #181818;
     color: white;
+    background-image: url('https://i.redd.it/9sbl785jrii91.png');
 }
 
 
 .navbar{
-    background-color: #313131;
+    /* background-color: #313131; */
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.25);
 }
+
 
 .nav-link{
     margin-top: 10px;
@@ -21,17 +25,18 @@ body{
 a{
     color: white !important;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 a:hover{
-    transform: scale(1.04);
-    color: rgb(102, 211, 110) !important;
+    /* transform: scale(1.03); */
+    color: rgb(255, 140, 0) !important;
     cursor: pointer;
     
 }
 
 #index{
-    width: 300px;
+    width: 400px;
     margin-left: 30px;
 }
 
@@ -45,13 +50,15 @@ a:hover{
 }
 
 #bio{
-    border: 1px white solid;
+    /* border: 1px white solid; */
     display: flex;
     flex-direction: row;
     margin: 20px;
     max-width: 600px;
     justify-content: space-between;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(3px);
 }
 
 #left{
@@ -66,12 +73,14 @@ img{
 }
 
 #contact{
-    border: 1px white solid;
+    /* border: 1px white solid; */
     margin: 20px;
     min-width: 300px;
     max-width: 600px;
     justify-content: space-between;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(3px);
 }
 
 .logo{
@@ -81,12 +90,14 @@ img{
 }
 
 #info{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin-left: 20px;
     width: calc(100% - 40px);
     margin-right: 0;
     padding: 20px;
     max-width: 940px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(3px);
 }
 
 

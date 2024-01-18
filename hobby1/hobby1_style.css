@@ -48,27 +48,21 @@ a:hover{
 
 #container >div{
     margin: 10px;
-    /* border: white 1px solid; */
     display: flex;
     padding: 20px;
     gap: 20px;
-    /* background-color: rgb(255, 251, 0); */
     border-radius: 10px;
     backdrop-filter: blur(2px);
 }
 
 #container > div > .text{
-    /* background-color: #181818; */
-    /* box-shadow: inset 0px 0px 50px 50px #181818; */
     padding: 20px;
 }
 
 #container > div:hover{ 
-    /* background-color: rgb(25, 104, 156); */
     backdrop-filter: blur(3px);
     background: rgba(255, 255, 255, 0.2);
     cursor: pointer;
-    /* box-shadow: inset 0px 0px 50px 50px #181818; */
 }
 
 img{
