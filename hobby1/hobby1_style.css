@@ -30,9 +30,9 @@ a{
 
 a:hover{
     /* transform: scale(1.03); */
-    color: rgb(255, 140, 0) !important;
+    color: rgb(194, 194, 194) !important;
     cursor: pointer;
-    
+    text-decoration: underline;
 }
 
 #index{

@@ -6,7 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    
+    <script src="main.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-md p-4 fixed-top fixed-left">
@@ -45,16 +45,34 @@
             <img src="../images/person.png" alt="">
         </div>
         <div id="contact">
-            <img class="logo" src="../images/insta_logo.png" alt="">
-            insta - panav.shah <br>
-            <img class="logo" src="../images/github_logo_white.png" alt="">
-            github - panav <br>
-            <img class="logo" src="../images/linkedIn_logo.png" alt="">
-            linkedin - panav
+            <h2>Contact me</h2>
+            <a class="contact-link" href="https://www.instagram.com/panav_shah?igsh=bXRodnFkMTA0cmpw&utm_source=qr">
+                <img class="logo" src="../images/insta_logo.png" alt="">
+                Insta - panav_shah <br>
+            </a> 
+            <a class="contact-link" href="https://github.com/PanavShah1">  
+                <img class="logo" src="../images/github_logo_white.png" alt="">
+                Github - PanavShah1 <br>
+            </a> 
+            <a class="contact-link" href="https://in.linkedin.com/in/panav-shah-621b10282">
+                <img class="logo" src="../images/linkedIn_logo.png" alt="">
+                Linkedin - Panav Shah
+            </a>
+            <a class="contact-link" href="https://mail.google.com">
+                <img class="logo" src="../images/gmail_logo.webp" alt="">
+                Gmail - panav.shah@gmail.com
+            </a>
         </div>
         <div id="info">
             info about me <br>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas expedita, repellendus rerum sunt optio voluptatum aspernatur ipsam deserunt quam libero tenetur omnis iste accusantium alias consequatur dolores dolorum explicabo perferendis.
+        </div>
+        <div id="mail">
+            <!-- <a href=''>Email Me!</a>  -->
+            <h2>Send an email to me!</h2>
+            <input type="text" id="subjectInput" placeholder="Subject">
+            <input type="text" id="emailInput" placeholder="Enter your message">
+            <button id="sendButton" onclick="sendEmail()">Send Email</button>
         </div>
     </div>
 
