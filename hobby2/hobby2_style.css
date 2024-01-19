@@ -68,6 +68,22 @@ a:hover{
 
 img{
     border-radius: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    align-self: center;
+}
+
+.project-img{
+    width: 800px;
+    height: 500px;
 }
 
 
@@ -79,20 +95,28 @@ img{
         margin-left: 0;
     }
 
-    #intro img:nth-child(2){
+    #coding img:nth-child(2){
         order: 1;
+        width: auto;
+        height: auto;
     }
 
-    #description img:nth-child(1){
+    #got-into img:nth-child(1){
         order: 1;
+        width: auto;
+        height: auto;
     }
 
-    #me-cubing img:nth-child(2){
+    #background img:nth-child(2){
         order: 1;
+        width: auto;
+        height: auto;
     }
 
-    #competitions img:nth-child(1){
+    #experience img:nth-child(1){
         order: 1;
+        width: auto;
+        height: auto;
     }
 }
 

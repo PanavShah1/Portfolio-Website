@@ -67,6 +67,16 @@ a:hover{
 
 img{
     border-radius: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+
+#my-times-img{
+    width: 100%;
+    height: 100%;
+    max-width: 1500px;
+    max-height: 800px;
 }
 
 
@@ -80,18 +90,26 @@ img{
 
     #intro img:nth-child(2){
         order: 1;
+        width: auto;
+        height: auto;
     }
 
     #description img:nth-child(1){
         order: 1;
+        width: auto;
+        height: auto;
     }
 
     #me-cubing img:nth-child(2){
         order: 1;
+        width: auto;
+        height: auto;
     }
 
     #competitions img:nth-child(1){
         order: 1;
+        width: auto;
+        height: auto;
     }
 }
 
