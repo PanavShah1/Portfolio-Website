@@ -1,11 +1,14 @@
 body{
     background-color: #181818;
     color: white;
+    background-image: url('https://img.freepik.com/free-vector/abstract-digital-grid-vector-black-background_53876-111550.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705449600&semt=ais');
 }
 
 
 .navbar{
-    background-color: #313131;
+    /* background-color: #313131; */
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 
@@ -22,32 +25,49 @@ body{
 a{
     color: white !important;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 a:hover{
-    transform: scale(1.03);
-    color: rgb(102, 211, 110) !important;
+    /* transform: scale(1.03); */
+    color: rgb(255, 140, 0) !important;
     cursor: pointer;
     
 }
 
 #index{
-    width: 300px;
+    width: 400px;
     margin-left: 30px;
 }
 
 #container{
-    margin-top: 90px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
+    /* max-width: 1500px; */
 }
 
 #container >div{
-    margin: 20px;
-    border: white 1px solid;
+    margin: 10px;
     display: flex;
-    padding: 10px;
+    padding: 20px;
     gap: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+}
+
+#container > div > .text{
+    padding: 20px;
+}
+
+#container > div:hover{ 
+    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+img{
+    border-radius: 10px;
 }
 
 
