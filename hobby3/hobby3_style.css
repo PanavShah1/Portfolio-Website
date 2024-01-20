@@ -1,7 +1,7 @@
 body{
     background-color: #181818;
     color: white;
-    background-image: url('https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149141553.jpg');
+    background-image: url('https://media.istockphoto.com/id/1468296537/vector/seamless-camouflaged-black-grunge-textures-wallpaper-background.jpg?s=612x612&w=0&k=20&c=Sc3auzDoYX7wt01KphLYfWqIvtRpyzfjvAB6PPZRK0U=');
 }
 
 
@@ -88,25 +88,25 @@ img{
         margin-left: 0;
     }
 
-    #intro img:nth-child(2){
+    #sports img:nth-child(2){
         order: 1;
         width: auto;
         height: auto;
     }
 
-    #description img:nth-child(1){
+    #tennis img:nth-child(1){
         order: 1;
         width: auto;
         height: auto;
     }
 
-    #me-cubing img:nth-child(2){
+    #tt img:nth-child(2){
         order: 1;
         width: auto;
         height: auto;
     }
 
-    #competitions img:nth-child(1){
+    #chess img:nth-child(1){
         order: 1;
         width: auto;
         height: auto;
