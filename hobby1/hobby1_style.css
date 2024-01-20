@@ -2,6 +2,10 @@ body{
     background-color: #181818;
     color: white;
     background-image: url('https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149141553.jpg');
+    display: flex;
+    justify-content: center;
+    background-size: 100%;
+
 }
 
 
@@ -44,6 +48,7 @@ a:hover{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
 }
 
 #container >div{
@@ -81,6 +86,10 @@ img{
 
 
 @media (max-width:767.69px){
+    body{
+        display: inline;
+    }
+
     #container>div{
         flex-direction: column;
     }

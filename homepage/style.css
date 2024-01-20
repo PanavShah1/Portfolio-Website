@@ -2,6 +2,7 @@ body{
     background-color: #181818;
     color: white;
     background-image: url('https://i.redd.it/9sbl785jrii91.png');
+    
 }
 
 
@@ -47,6 +48,8 @@ a:hover{
     margin-top: 90px;
     display: flex;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
 
 #bio{
