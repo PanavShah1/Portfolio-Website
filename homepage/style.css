@@ -24,16 +24,17 @@ body{
 
 
 a{
-    color: white !important;
-    text-decoration: none;
+    color: rgb(250, 250, 250) !important;
+    text-decoration: underline;
     font-size: 1.2rem;
+
 }
 
 a:hover{
+    text-decoration: none;
     /* transform: scale(1.03); */
     color: rgb(194, 194, 194) !important;
     cursor: pointer; 
-    text-decoration: underline;
 }
 
 #index{
@@ -93,7 +94,7 @@ img{
     margin-right: 10px;
 }
 
-#info{
+#info, #about-website{
     /* border: 1px solid white; */
     margin: 20px;
     width: calc(100% - 40px);
@@ -126,7 +127,7 @@ img{
 #sendButton{
     color: white;
     background-color: rgb(46, 98, 202);
-    width: 100px;
+    width: 110px;
     border-radius: 50px;
     border: none;
 }

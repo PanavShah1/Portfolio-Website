@@ -27,15 +27,15 @@ body{
 
 a{
     color: white !important;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 1.2rem;
 }
 
 a:hover{
     /* transform: scale(1.03); */
+    text-decoration: none;
     color: rgb(194, 194, 194) !important;
     cursor: pointer;
-    text-decoration: underline;
 }
 
 #index{
@@ -89,8 +89,13 @@ img{
     height: 100%;
     max-width: 800px;
     max-height: 500px;
+    margin-bottom: 50px;
 }
 
+.project a{
+    text-align: center;
+    margin-bottom: 10px;
+}
 
 @media (max-width:767.69px){
     body{
