@@ -71,9 +71,10 @@ a:hover{
 
 
 img{
-    width: 100px;
-    height: 100px;
+    width: 225px;
+    height: 300px;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 #contact{
@@ -138,13 +139,16 @@ img{
         flex-direction: column;
     }
     #container div:nth-child(2){
-        order: 4;
+        order: 5;
     }
     #container div:nth-child(3){
         order: 2;
     }
     #container div:nth-child(4){
         order: 3;
+    }
+    #container div:nth-child(5){
+        order: 4;
     }
 
     #bio{
