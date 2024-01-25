@@ -1,10 +1,11 @@
 body{
     background-color: #181818;
     color: white;
-    background-image: url('https://img.freepik.com/free-vector/abstract-digital-grid-vector-black-background_53876-111550.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705449600&semt=ais');
+    background-image: url("../images/hobby2_background.avif");
     background-size: 100%;
     display: flex;
     justify-content: center;
+    background-attachment: fixed;
 }
 
 
@@ -48,6 +49,22 @@ a:hover{
     display: flex;
     flex-direction: column;
     max-width: 1000px;
+    animation: slide-up 1s;
+}
+
+@keyframes slide-up {
+    0% {
+        margin-top: 100%;
+        /* width: 300%;  */
+    }
+    60%{
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: 100px;
+        /* width: 100%; */
+    }
 }
 
 #container >div{

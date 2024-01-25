@@ -1,8 +1,8 @@
 body{
     background-color: #181818;
     color: white;
-    background-image: url('https://i.redd.it/9sbl785jrii91.png');
-    
+    background-image: url('../images/homepage_background.png');
+    background-attachment: fixed;
 }
 
 
@@ -51,18 +51,44 @@ a:hover{
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+    animation: slide-up 1s;
+}
+
+@keyframes slide-up {
+    0% {
+        margin-top: 100%;
+        /* width: 300%;  */
+    }
+    60%{
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: 100px;
+        /* width: 100%; */
+    }
+}
+
+#container > div{ 
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(3px);
+    margin: 20px;
+    padding: 20px;
+}
+
+#container > div:hover{ 
+    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.2);
+    /* cursor: pointer; */
 }
 
 #bio{
     /* border: 1px white solid; */
     display: flex;
     flex-direction: row;
-    margin: 20px;
     max-width: 600px;
     justify-content: space-between;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(3px);
 }
 
 #left{
@@ -78,13 +104,9 @@ img{
 
 #contact{
     /* border: 1px white solid; */
-    margin: 20px;
     max-width: 600px;
     max-height: 250px;
     justify-content: space-between;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(3px);
     display: flex;
     flex-direction: column;
 }
@@ -96,21 +118,13 @@ img{
 
 #info, #about-website{
     /* border: 1px solid white; */
-    margin: 20px;
     width: calc(100% - 40px);
-    padding: 20px;
     max-width: 991.664px;
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(3px);
 }
 
 #mail{
-    margin: 20px;
     width: calc(100% - 40px);
-    padding: 20px;
     max-width: 991.664px;
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(3px);
     border: 1px solid white;
     display: flex;
     flex-direction: column;

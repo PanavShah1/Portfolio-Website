@@ -1,11 +1,11 @@
 body{
     background-color: #181818;
     color: white;
-    background-image: url('https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149141553.jpg');
+    background-image: url('../images/hobby1_background.avif');
     display: flex;
     justify-content: center;
     background-size: 100%;
-
+    background-attachment: fixed;
 }
 
 
@@ -49,6 +49,23 @@ a:hover{
     display: flex;
     flex-direction: column;
     max-width: 1000px;
+    justify-content: center;
+    animation: slide-up 1s;
+}
+
+@keyframes slide-up {
+    0% {
+        margin-top: 100%;
+        /* width: 300%;  */
+    }
+    60%{
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: 100px;
+        /* width: 100%; */
+    }
 }
 
 #container >div{
