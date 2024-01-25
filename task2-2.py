@@ -72,35 +72,43 @@ class SyncService:
         No return value required on handling a `record`."""
         try:
             if data['type'] == 'record':
+                print('record')
                 self.records.append(data)
+
             elif data['type'] == 'probe':
+                print('probe')
                 dev_id = data['dev_id']
                 _from = data['from']
                 
-                if _from > len(self.records):
-                    raise ValueError(f"Invalid 'from' index {_from} for device {dev_id}")
+                # if _from > len(self.records):
+                #     raise ValueError(f"Invalid 'from' index {_from} for device {dev_id}")
 
                 updates = self.records[_from:]
                 response = {'type': 'update', 'from': _from, 'data': updates, 'dev_id': dev_id}
                 return response
-        except:
-            return NotImplementedError()
+        except KeyError:
+            print(f"empty return")
+            return {'type': 'update', 'from': -1, 'data': [], 'dev_id': 1}
+        except Exception as e:
+            print('exception')
+            raise NotImplementedError()
 
-        
-        # else:
-        #     # Unsupported message type
-        #     raise NotImplementedError()
 
 
 def testSyncing():
-    devices = [Device(f"dev_{i}") for i in range(10)] # device = [Device1, Device2, ...], Device1.id = 'dev_1', Device1.record = [], Device1.sent = []
-    syn = SyncService() 
+    devices = [Device(f"dev_{i}") for i in range(10)]
+    syn = SyncService()
    
-    _N = int(100)
+    _N = int(10)
     for i in range(_N):
         for _dev in devices:
             syn.onMessage(_dev.obtainData())
-            _dev.onMessage(syn.onMessage(_dev.probe()))
+            print('before ex')
+            k = syn.onMessage(_dev.probe())
+            print(k)
+            print(k['data'])
+            _dev.onMessage(k)
+            print('after ex')
 
 
     done = False
@@ -117,14 +125,18 @@ def testSyncing():
         for _dev in devices[1:]:
             assertEquivalent(rec, _dev.records[i])
         ver_start[_dev_idx] += 1
+
+    # print(syn.records)
+    for i in syn.records:
+        print(i)
+        print()
+    print(len(syn.records))
    
 def assertEquivalent(d1:dict, d2:dict):
     assert d1['dev_id'] == d2['dev_id']
     assert d1['timestamp'] == d2['timestamp']
     for kee in _DATA_KEYS:
         assert d1['data'][kee] == d2['data'][kee]
-        
 
-# Run the testSyncing function
 testSyncing()
-print("Code executed successfully.")
+print('done')

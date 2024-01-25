@@ -74,13 +74,13 @@ img{
     width: 225px;
     height: 300px;
     margin-bottom: 10px;
-    align-items: center;
 }
 
 #contact{
     /* border: 1px white solid; */
     margin: 20px;
     max-width: 600px;
+    max-height: 250px;
     justify-content: space-between;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -92,14 +92,12 @@ img{
 .logo{
     width: 30px;
     height: 30px;
-    margin-right: 10px;
 }
 
 #info, #about-website{
     /* border: 1px solid white; */
     margin: 20px;
     width: calc(100% - 40px);
-    margin-right: 0;
     padding: 20px;
     max-width: 991.664px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -109,7 +107,6 @@ img{
 #mail{
     margin: 20px;
     width: calc(100% - 40px);
-    margin-right: 0;
     padding: 20px;
     max-width: 991.664px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -165,4 +162,7 @@ img{
     #index{
         margin-left: 0;
     }
+    /* #bio, #contact, #info, #about-website, #mail{
+        align-self: center;
+    } */
 }
