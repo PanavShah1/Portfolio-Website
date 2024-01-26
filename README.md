@@ -11,3 +11,5 @@ Note: There might be some lag that you may experience (in the animations and whe
 
 You can also access the website here:
 https://panavshah1.github.io/Portfolio-Website/homepage/index.html
+
+Look out for underlined text... they are all clickable
