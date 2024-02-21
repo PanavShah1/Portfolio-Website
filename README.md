@@ -1,6 +1,6 @@
 # Portfolio website
 This is my portfolio website <br>
-Submission for IIT Bombay's DevCom Assignment
+Includes a bit about me and my hobbies
 
 # Running the program
 Open the homepage folder <br>
